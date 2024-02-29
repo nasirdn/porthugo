@@ -1,6 +1,6 @@
 baseURL = 'https://nasirdn.github.io/porthugo/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Portfolio'
 theme = "hugo-ficurinia-master"
 
 # this will be included in the footer after the current year the site is last
@@ -37,8 +37,8 @@ summaryLength = 70  # number of words for article summaries
 
     logoRightOfTitle = false  # positions the logo to the right of the title; default: false
 
-    showTags = true  # show the Tags menu item; default true
-    showRss = true  # show the link for the RSS feed; default true
+    showTags = false  # show the Tags menu item; default true
+    showRss = false  # show the link for the RSS feed; default true
 
     imageInArticlePreview = false  # show images in article preview; default false
     fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
@@ -128,9 +128,24 @@ summaryLength = 70  # number of words for article summaries
     # the folder it will look into can be customized with the pages variable
     # in params above
     [[menu.main]]
+        identifier = "4 year"
+        name = "4 year"
+        url = "/4 year/"
+        weight = 10
+    [[menu.main]]
         identifier = "3 year"
         name = "3 year"
         url = "/3 year/"
+        weight = 10
+    [[menu.main]]
+        identifier = "2 year"
+        name = "2 year"
+        url = "/2 year/"
+        weight = 10
+    [[menu.main]]
+        identifier = "1 year"
+        name = "1 year"
+        url = "/1 year/"
         weight = 10
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
@@ -138,12 +153,7 @@ summaryLength = 70  # number of words for article summaries
         name = "GitHub"
         url = "https://github.com/nasirdn"
         weight = 10
-    [[menu.icons]]
-        identifier = "gnome"
-        name = "GNOME GitLab"
-        url = "https://gitlab.gnome.org/gabmus"
-        weight = 20
-
+    
 # this section is necessary if you want infinite scrolling
 # it allows to output the article list as paged JSON so that "pages" can be retrieved via javascript
 [outputs]
